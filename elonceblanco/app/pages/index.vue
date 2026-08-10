@@ -1,24 +1,15 @@
 <script setup lang="ts">
 
-  definePageMeta({
-    title: 'Inicio - El Once Blanco'
-  });
-  useHead({
-    title: 'Inicio - El Once Blanco',
-    meta: [
-      {
-        name: 'description',
-        content: 'Bienvenidos al Podcast dedicado al Real Madrid',
-      },
-    ],
-  });
+
 
   import MainHeader from '~/components/MainHeader.vue';
+  import MainMenu from '~/components/MainMenu.vue';
 </script>
 
 <template>
   <div id="home_page" class="page">
     <MainHeader />
+    <MainMenu :activo="1" />
   </div>
 </template>
 

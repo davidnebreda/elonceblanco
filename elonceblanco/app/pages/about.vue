@@ -7,12 +7,12 @@
 </script>
 
 <template>
-  <div id="home_page" class="page">
+  <div id="about_page" class="page">
     <MainHeader />
-    <MainMenu :activo="1" />
+    <MainMenu :activo="3" />
     <main id="main_content" class="container w-auto my-5">
-      <h1 class="text-center">Bienvenido a mi sitio web</h1>
-      <p class="text-center">Este es un ejemplo de página de inicio.</p>
+      <h1 class="text-center">Nosotros</h1>
+      <p class="text-center">Aquí puedes encontrar información sobre nosotros.</p>
     </main>
   </div>
 </template>

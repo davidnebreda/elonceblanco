@@ -7,7 +7,7 @@
 </script>
 <template>
   <div>
-    <router-view />
+    <NuxtPage page-key="static" />
   </div>
 </template>
 

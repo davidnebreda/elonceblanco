@@ -1,10 +1,11 @@
 <script setup lang="ts">
 
- defineProps(
+const props = defineProps(
      {
        activo:Number
      }
  );
+
  const mainmenuitem = [
   {
     id: 1,
@@ -14,7 +15,7 @@
   {
     id: 2,
     name: 'Episodios',
-    route: '/about',
+    route: '/shows',
   },
   {
     id: 3,
@@ -34,7 +35,8 @@
     <ul class="list-unstyled d-flex gap-3 m-0 p-0">
 
       <li v-for="item in mainmenuitem" :key="item.id">
-        <router-link :to="item.route" class="text-decoration-none text-dark menuitems" :class="{ active: item.id === activo }">{{ item.name }}</router-link>
+        <NuxtLink :to="item.route" class="text-decoration-none text-dark menuitems_active" v-if="props.activo === item.id">{{ item.name }}</NuxtLink>
+        <NuxtLink :to="item.route" class="text-decoration-none text-dark menuitems" v-else>{{ item.name }}</NuxtLink>
       </li>
     </ul>
   </div>
@@ -45,7 +47,7 @@
    font-size: 1.3rem;
  }
 
- .menuitems:active {
+ .menuitems_active {
    font-size: 1.3rem;
    font-weight: bold;
  }

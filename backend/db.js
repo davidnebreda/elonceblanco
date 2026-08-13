@@ -20,14 +20,17 @@ async function getLastShow() {
       pool1 = await conexiondb();
       try {
          const result = pool1.query("SELECT * FROM obv_lastvideo");
-         console.log("resultado", result);
          return result;
       }
       catch(err)
       {
         console.log("Error en Base de Datos:",err);
+        pool1.end();
         throw err;
       }
+      
+        pool1.end();
+      
 }
 
 module.exports = getLastShow;

@@ -10,7 +10,7 @@
   <div id="shows_page" class="page">
     <MainHeader />
     <MainMenu :activo="2" />
-    <main id="main_content" class="container w-auto my-5">
+    <main id="main_content" class="container w-auto my-5 h-100 d-flex flex-column justify-content-center align-items-center">
       <h1 class="text-center">Últimos Programas</h1>
       <p class="text-center">Aquí puedes encontrar los últimos programas disponibles.</p>
     </main>

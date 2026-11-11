@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  background-color: inherit;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.view_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+
+}

@@ -1,0 +1,22 @@
+.toolbar_mobile
+{
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.toolbar_mobile_header
+{
+    width: 100vw;
+}
+
+.toolbar_mobile_menu
+{
+    width: 100vw;
+}
+
+.menuitem_mobile
+{
+    font-size: 2rem;
+    color:black;
+    font-weight: bold;
+}

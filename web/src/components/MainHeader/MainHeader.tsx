@@ -1,4 +1,5 @@
 import './MainHeader.css';
+import mainMenu from '../../data/mainmenu';
 
 function MainHeader() {
     const titulo_web = "El once blanco";
@@ -11,10 +12,11 @@ function MainHeader() {
                 </div>
                 
                 <div className="is-flex is-flex-direction-row is-align-items-center is-gap-3">
-                    <a href="/" className="menuitem" target="_self">Inicio</a>
-                    <a href="#" className="menuitem" target="_self">Vídeos</a>
-                    <a href="#" className="menuitem" target="_self">Nosotros</a>
-                    <a href="#" className="menuitem" target="_self">Contacto</a>
+                    {mainMenu.map((item) => (
+                        <a key={item.title} href={item.link} className="menuitem" target="_self">
+                            {item.title}
+                        </a>
+                    ))}
                 </div>
             </div>
         </>

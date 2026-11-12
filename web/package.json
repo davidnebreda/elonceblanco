@@ -11,17 +11,19 @@
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
+    "@types/youtube-player": "^5.5.11",
     "animate.css": "^4.1.1",
     "bulma": "^1.0.4",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.5"
+    "react-router-dom": "^7.18.5",
+    "youtube-player": "^5.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",

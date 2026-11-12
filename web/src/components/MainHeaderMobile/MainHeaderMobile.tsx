@@ -1,4 +1,5 @@
 import './MainHeaderMobile.css'
+import mainMenu from '../../data/mainmenu';
 
 function MainHeaderMobile()
 {
@@ -20,10 +21,11 @@ function ToolBarMobile()
     return (
         <>
           <div className="toolbar_mobile_menu is-flex is-flex-direction-row is-justify-content-center is-align-items-center is-gap-2 py-3">
-                    <a href="/" className="menuitem_mobile" target="_self" title="Inicio"><i className="fa fa-home"></i></a>
-                    <a href="#" className="menuitem_mobile" target="_self" title="Vídeos"><i className="fa fa-youtube"></i></a>
-                    <a href="#" className="menuitem_mobile" target="_self" title="Nosotros"><i className="fa fa-user"></i></a>
-                    <a href="#" className="menuitem_mobile" target="_self" title="Contacto"><i className="fa fa-envelope"></i></a>
+                    {mainMenu.map((item) => (
+                        <a key={item.title} href={item.link} className="menuitem_mobile" target="_self" title={item.title}>
+                            <i className={item.icon}></i>
+                        </a>
+                    ))}
           </div>
         </>
     )

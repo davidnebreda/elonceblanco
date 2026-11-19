@@ -15,6 +15,8 @@ function VideoPlayer(props: VideoPlayerProps) {
     useEffect(() => {
         const youtubePlayer = YouTubePlayer('youtube-player', {
             videoId: props.videoid,
+            
+            
         });
         youtubePlayer.playVideo()
     }, [props.videoid]);
@@ -22,7 +24,7 @@ function VideoPlayer(props: VideoPlayerProps) {
         <>
         <div className="video_player">
             <figure className="image is-16by9">
-                <div id="youtube-player"></div>
+                <div id="youtube-player" className="has-ratio"></div>
             </figure>
         </div>
         <div className="content mt-2">

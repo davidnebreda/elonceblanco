@@ -7,7 +7,7 @@ function HomeView() {
     return (
         <>
             <div className="view_container">
-                <div className="grid">
+                <div id="headers_container" className="grid">
                     <div className="cell">
                         <MainHeader />
                         <MainHeaderMobile />

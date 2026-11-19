@@ -1,5 +1,13 @@
 .video_player {
-    width: 100%;
-    max-width: 800px;
-   display: block;
+    width: 640px;
+    height: 360px;
+display: block;
+}
+
+@media (max-width: 640px) { 
+    .video_player {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
